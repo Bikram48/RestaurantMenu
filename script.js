@@ -7,51 +7,51 @@ const items = [
         img: 'item-1'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Diner Double',
+        price: 13.99,
+        description: 'vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats',
         category: 'lunch',
         img: 'item-1'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Godzilla Milkshake',
+        price: 6.99,
+        description: 'ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.',
         category: 'breakfast',
         img: 'item-2'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Country Delight',
+        price: 20.99,
+        description: 'Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,',
         category: 'dinner',
         img: 'item-3'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Egg Attack',
+        price: 22.99,
+        description: 'franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90\'s pop-up',
         category: 'breakfast',
         img: 'item-4'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Oreo Dream',
+        price: 18.99,
+        description: 'Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday',
         category: 'lunch',
         img: 'item-5'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'Bacon Overflow',
+        price: 8.99,
+        description: 'carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird',
         category: 'shakes',
         img: 'item-6'
     },
     {
-        name: 'Buttermilk Pancakes',
-        price: 15.99,
-        description: 'I\'m baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed',
+        name: 'American Classic',
+        price: 12.99,
+        description: 'on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut',
         category: 'lunch',
         img: 'item-7'
     },
@@ -66,7 +66,7 @@ window.addEventListener( "DOMContentLoaded", () => {
            <img src="images/${item.img}.jpeg"/>
            <div class="content">
                <h2>${item.name}</h2>
-               <p>${item.price}</p>
+               <p>$ ${item.price}</p>
                <p>${item.description}</p>
            </div>
         </div>`;
