@@ -58,8 +58,37 @@ const items = [
 ];
 
 const itemSelector = document.getElementById( 'item-container' );
+const categories = document.querySelectorAll( '.cat' );
 
 window.addEventListener( "DOMContentLoaded", () => {
+    displayItems( items );
+});
+
+const filterItems = () => {
+
+    categories.forEach( ( category ) => {
+        category.addEventListener( 'click', ( e ) => {
+            e.preventDefault();
+            console.log( e.currentTarget.dataset.id );
+           let id = e.currentTarget.dataset.id;
+           let filteredItems = items.filter( item =>  {
+               if( id === item.category ) {
+                   return item;
+               }
+
+               if( id === 'all' ) {
+                   return items;
+               }
+           });
+
+           displayItems( filteredItems );
+        } );
+    } );
+}
+
+filterItems();
+
+function displayItems( items ) {
 
     const itemMarkup = items.map( item => {
         return `<div class="item">
@@ -71,11 +100,6 @@ window.addEventListener( "DOMContentLoaded", () => {
            </div>
         </div>`;
     });
-
-    displayAllItems( itemMarkup );
-});
-
-function displayAllItems( itemMarkup ) {
 
     const allItems = itemMarkup.reduce( ( accumulator, currentItem ) => {
         return accumulator + currentItem;
