@@ -10,8 +10,8 @@ const items = [
         name: 'Diner Double',
         price: 13.99,
         description: 'vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats',
-        category: 'lunch',
-        img: 'item-1'
+        category: 'shakes',
+        img: 'item-8'
     },
     {
         name: 'Godzilla Milkshake',
@@ -54,6 +54,20 @@ const items = [
         description: 'on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut',
         category: 'lunch',
         img: 'item-7'
+    },
+    {
+        name: 'Quarantine Buddy',
+        price: 16.99,
+        description: 'skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.',
+        category: 'dinner',
+        img: 'item-9'
+    },
+    {
+        name: 'Steak Dinner',
+        price: 39.99,
+        description: 'skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.',
+        category: 'dinner',
+        img: 'item-10'
     },
 ];
 
